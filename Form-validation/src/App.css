@@ -1,0 +1,22 @@
+#main{
+  border: 2px solid;
+  width: 250px;
+  border-radius: 10px;
+  margin: auto;
+  padding: 20px;
+}
+
+input{
+  height: 30px;
+  width: 200px;
+  border-radius: 8px;
+  padding-left: 20px;
+}
+
+button{
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  height: 30px;
+  width: 80px;
+}
