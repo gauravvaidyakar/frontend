@@ -1,0 +1,47 @@
+#navbar{
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(19, 51, 230);
+}
+#navbar h1{
+  display: flex;
+  gap: 20px;
+  color: white;
+}
+
+#product-section{
+  /* border: 2px solid; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height:150px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 20px;
+}
+
+#product-section div input{
+padding:10px;
+width: 300px;
+border-radius: 10px;
+border: 1px solid rgb(77, 73, 73);
+
+}
+
+#product-section div button{
+  padding:10px;
+  width: 200px;
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+  margin-top: 64px;
+}
+
+#select{
+  padding: 10px;
+  width: 300px;
+  border-radius: 10px;
+}
+
