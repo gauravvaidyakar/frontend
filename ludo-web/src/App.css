@@ -1,0 +1,77 @@
+#main{
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+#dice-text{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+#dice-text h1{
+font-size: 5.5rem;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#dice-text button{
+padding: 5px 30px;
+background-color: black;
+color: white;
+border-radius: 10px;
+margin-left: 320px;
+}
+
+.dice-img{
+  height: 500px;
+}
+
+#play-section{
+  display: flex;
+  gap: 790px;
+}
+
+.boxes{
+  display: flex;
+  gap: 10px;
+}
+
+.boxes h1{
+   border: 2px solid;
+   padding: 10px 20px;
+   height: 40px;
+}
+
+#play-section h2{
+ margin-top: -5px;
+}
+
+#centre{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+#centre button{
+  padding: 5px 50px;
+  border-radius: 5px;
+}
+
+#dice{
+  /* margin-top: 40px;
+  margin-left: 550px; */
+  height: 200px;
+  width: 200px;
+}
+
+#rules-page{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(223, 208, 224);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 10px;
+}
