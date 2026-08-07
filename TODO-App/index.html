@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faa</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter text" id="anumbomb">
+    <button>submit</button>
+
+    <ol id="hanubomb"></ol>
+</body>
+<script>
+    let input = document.querySelector("#anumbomb")
+    let btn = document.querySelector("button")
+    btn.addEventListener("click",()=>{
+        if(input.value === ""){
+            return alert("tumne ek sher ko call kiya hai")
+        }
+
+        let list = document.createElement("li")
+        list.innerText = input.value
+
+        let order_list = document.querySelector("#hanubomb")
+        order_list.append(list)
+
+        let button = document.createElement("button")
+        button.innerText = "Delete"
+
+        list.append(button)
+
+        button.addEventListener("click",()=>{
+               list.remove()
+        })
+    })
+</script>
+</html>

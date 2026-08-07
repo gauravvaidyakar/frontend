@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" placeholder="enter your name" class="input-text" />
+    <button>submit</button>
+
+    <ol id="boss"></ol>
+  </body>
+  <script>
+    let a = document.querySelector(".input-text");
+    let b = document.querySelector("button");
+    b.addEventListener("click", function () {
+      if (a.value == "") {
+        return alert("empty input");
+      }
+      let c = document.createElement("li");
+      c.innerText = a.value;
+      console.log(a.value);
+
+      let list = document.querySelector("#boss");
+      list.append(c);
+
+      let deleteBtn = document.createElement("button");
+      deleteBtn.innerText = "delete";
+      c.append(deleteBtn);
+      deleteBtn.addEventListener("click", () => {
+        c.remove();
+      });
+    });
+  </script>
+</html>
