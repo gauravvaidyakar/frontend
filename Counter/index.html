@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-image: url("https://images.wallpapersden.com/image/download/assassins-s-creed-shadows-4k-gaming_bmdtZWmUmZqaraWkpJRobWllrWdmbm4.jpg");
+        background-repeat: no-repeat;
+        height: 250px;
+        color: white;
+        background-size: cover;
+        background-position: center;
+      }
+
+      #main {
+        text-align: center;
+        margin-top: 200px;
+      }
+
+      #main > button {
+        border-radius: 10px;
+        color: white;
+        background-color: transparent;
+        height: 40px;
+        width: 120px;
+        margin: 10px;
+      }
+      #main > button:hover {
+        transform: scale(1.1);
+        background-color: lightred;
+      }
+
+      #number > img {
+        height: 30px;
+      }
+
+      #Counter {
+        font-size: 60px;
+        font-style: oblique;
+        background-image: url("https://cdn.pixabay.com/photo/2015/04/19/08/32/flower-729510_1280.jpg");
+        background-size: contain;
+        background-position: center;
+
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      #number{
+        background-image: url("https://cdn.pixabay.com/photo/2015/04/19/08/32/flower-729510_1280.jpg");
+        background-size: contain;
+        background-position: center;
+
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <h1 id="Counter">Counter</h1>
+      <h2 id="number">
+        <img src="./assets/UI-zero-removebg-preview.png" alt="" />
+      </h2>
+      <button onclick="increment()">Increment</button>
+      <button onclick="Decrement()">Decrement</button>
+      <button onclick="Reset()">Reset</button>
+    </div>
+  </body>
+  <script>
+    let number = document.querySelector("#number");
+
+    let count = 0;
+
+    function increment() {
+      count++;
+      number.innerText = count;
+    }
+
+    function Decrement() {
+      if (count > 0) count--;
+      number.innerText = count;
+    }
+
+    function Reset() {
+      count = 0;
+      number.innerText = count;
+    }
+  </script>
+</html>
